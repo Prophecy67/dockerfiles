@@ -1,19 +1,5 @@
 **Usage**
 --
-git pull this repo
+Various buildfiles are kept within this repository. Either used for built-in tools or simply building because of not wanting to install it through MacPorts or Brew and having Docker/Linux do the lifting.
 
-`docker build -t telnet .`
-
-`docker run -it telnet <host/ip> <optional port>`
-
-**Exiting**
---
-This image is using the built-in telnet functionality of busybox. Exiting is a little different after sending interrupt. ( CTRL + ] )
-```
-Console escape. Commands are:
-
- l	go to line mode
- c	go to character mode
- z	suspend telnet
- e	exit telnet
-```
+Each service will be in a separate folder for easy building of Dockerfiles.
